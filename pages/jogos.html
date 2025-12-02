@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tux Games | Jogos</title>
+
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+
+    <link rel="stylesheet" href="../css/jogos.css">
+</head>
+
+
+<body>
+<header class="topo">
+    <div class="cabecalho">
+        <a href="tuxgames.html" class="logo-link">
+            <img class="logo" src="../assets/logo (1).png" alt="Tux Games">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="tuxgames.html">Home</a></li>
+                <li><a href="jogos.html" class="ativo">Jogos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="games-main">
+
+    <!-- 1) HERO - TÍTULO EM PRIMEIRO LUGAR -->
+    <section class="games-hero">
+        <div class="games-hero-text">
+            <p class="hero-eyebrow">Catálogo Tux Games</p>
+            <h1>Encontre o jogo ideal para o seu evento ou locação</h1>
+            <p class="hero-subtitle">
+                Nosso acervo reúne clássicos, lançamentos, indies e jogos competitivos usados em campeonatos,
+                eventos temáticos e locações personalizadas.
+            </p>
+        </div>
+    </section>
+
+    <!-- 2) FILTROS -->
+    <section class="games-filters-section">
+        <div class="filters-card">
+            <div class="filters-top-row">
+                <div class="search-wrapper">
+                    <label for="searchInput">Buscar jogo</label>
+                    <div class="search-input-shell">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="searchInput" placeholder="Digite o nome do jogo.">
+                    </div>
+                </div>
+
+                <div class="select-row">
+                    <div class="select-wrapper">
+                        <label for="yearFilter">Ano</label>
+                        <select id="yearFilter">
+                            <option value="all">Todos</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                        </select>
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="genreFilter">Gênero</label>
+                        <select id="genreFilter">
+                            <option value="all">Todos</option>
+                            <option value="acao-aventura">Ação / Aventura</option>
+                            <option value="rpg">RPG</option>
+                            <option value="mundo-aberto">Mundo aberto</option>
+                            <option value="indie">Indie</option>
+                            <option value="multiplayer">Coop / Multiplayer</option>
+                            <option value="plataforma">Plataforma</option>
+                            <option value="corrida">Corrida</option>
+                            <option value="soulslike">Soulslike</option>
+                            <option value="terror">Terror</option>
+                            <option value="esporte">Esporte</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filters-bottom-row">
+                <div class="category-buttons">
+                    <button class="btn-filter active" data-category="all">Todos</button>
+                    <button class="btn-filter" data-category="destaques">Destaques</button>
+                    <button class="btn-filter" data-category="triple-a">AAA</button>
+                    <button class="btn-filter" data-category="rpg">RPG</button>
+                    <button class="btn-filter" data-category="indie">Indies</button>
+                    <button class="btn-filter" data-category="multiplayer">Multiplayer</button>
+                    <button class="btn-filter" data-category="classicos">Clássicos</button>
+                    <button class="btn-filter" data-category="soulslike">Soulslike</button>
+                    <button class="btn-filter" data-category="terror">Terror</button>
+                    <button class="btn-filter" data-category="corrida">Corrida</button>
+                </div>
+
+                <button id="resetFilters" class="btn btn-outline btn-sm">
+                    Limpar filtros
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3) LISTA FILTRADA -->
+    <section id="listView" class="games-list-view hidden">
+        <h2 class="list-title">Resultados filtrados</h2>
+        <ul class="produtos" id="gamesList"></ul>
+    </section>
+
+    <!-- 4) CARROSSEIS -->
+    <section id="carouselsView" class="carousels-view">
+        <!-- Preenchido pelo JS -->
+    </section>
+
+    <!-- 5) NOTA -->
+    <section class="games-note">
+        <p>
+            *Este catálogo é demonstrativo para portfólio. Os links levam para buscas em lojas oficiais
+            (Steam, PlayStation, Xbox) e para trailers no YouTube.
+        </p>
+    </section>
+
+</main>
+
+<footer class="basico">
+    <div class="footer-content">
+        <p class="copyright">&copy; 2024 Tux Games Studio Game. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script src="../js/jogos.js"></script>
+</body>
+</html>
+

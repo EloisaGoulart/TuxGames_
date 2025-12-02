@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tux Games | Contato</title>
+
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="stylesheet" href="../css/contato.css">
+</head>
+
+<body>
+    <header class="topo">
+        <div class="cabecalho">
+            <a href="tuxgames.html" class="logo-link">
+                <img src="../assets/logo (1).png" title="Tux Games" class="logo" alt="Tux Games">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="tuxgames.html">Home</a></li>
+                    <li><a href="jogos.html">Jogos</a></li>
+                    <li><a href="contato.html" class="ativo">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="contact-hero">
+        <div class="contact-hero-inner">
+            <div class="hero-text">
+                <span class="badge">Fale com o nosso time</span>
+                <h1>Vamos subir o nível da sua jogatina</h1>
+                <p>Envie sua dúvida, parceria, orçamento ou sugestão. Respondemos o mais rápido possível em horário comercial.</p>
+                <p class="hero-meta" id="dataAtual"></p>
+            </div>
+            <div class="hero-highlight">
+                <div class="hero-card">
+                    <h2>Atendimento Tux Games</h2>
+                    <p>Segunda a sexta, das 08h às 17h • Horário de Brasília</p>
+                    <ul>
+                        <li><strong>Telefone:</strong> (55) 4053-1956</li>
+                        <li><strong>E-mail:</strong> tuxgames@gmail.com</li>
+                        <li><strong>Endereço:</strong> São Caetano do Sul • SP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAYOUT PRINCIPAL -->
+    <main class="contact-main">
+        <section class="contact-layout card">
+            <!-- FORMULÁRIO -->
+            <div class="form-column">
+                <h3>Envie uma mensagem</h3>
+                <p class="subtitle">Preencha os campos abaixo e conte pra gente como podemos ajudar.</p>
+
+                <!-- mantém action e method, mas o JS vai impedir o redirect -->
+                <form id="formContato" action="tuxgames.html" method="post" class="contact-form">
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="usuario_nome" required placeholder="Seu nome">
+                        </div>
+                        <div class="field">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="usuario_email" required placeholder="seuemail@exemplo.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="telefone">Telefone / WhatsApp</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(DDD) 00000-0000" required>
+                        </div>
+                        <div class="field">
+                            <label for="assunto">Assunto</label>
+                            <select id="assunto" name="assunto" required>
+                                <option value="">Selecione</option>
+                                <option value="aluguel">Aluguel de jogos</option>
+                                <option value="parceria">Parcerias e eventos</option>
+                                <option value="suporte">Suporte técnico</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label>Como prefere nosso contato?</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="contato_preferido" value="email" checked>
+                                E-mail
+                            </label>
+                            <label>
+                                <input type="radio" name="contato_preferido" value="telefone">
+                                Telefone
+                            </label>
+                            <label>
+                                <input type="radio" name="contato_preferido" value="whatsapp">
+                                WhatsApp
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="msg">Mensagem</label>
+                        <textarea id="msg" name="usuario_msg" rows="5" required placeholder="Descreva com detalhes o que você precisa"></textarea>
+                    </div>
+
+                    <div class="field checkbox-field">
+                        <label>
+                            <input type="checkbox" id="novidades" name="novidades">
+                            Quero receber novidades, lançamentos e promoções da Tux Games.
+                        </label>
+                    </div>
+
+                    <div class="button">
+                        <button type="submit">Enviar mensagem</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- COLUNA LATERAL -->
+            <aside class="info-column">
+                <div class="info-card">
+                    <h4>Redes sociais</h4>
+                    <p>Acompanhe novidades, promoções e eventos ao vivo.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Twitch</a>
+                    </div>
+                </div>
+
+                <div class="info-card info-card--map">
+                    <h4>Onde estamos</h4>
+                    <p>Setup gamer aberto para testes presenciais sob agendamento.</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.865861176568!2d-46.56120982402628!3d-23.644974423357127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4328c992748f%3A0xcea3c3e698444297!2sSENAI%20S%C3%A3o%20Caetano%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1712879843357!5m2!1spt-BR!2sbr"
+                        width="100%" height="200" style="border:0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="basico">
+        <div class="footer-content">
+            <p class="copyright">&copy; Todos os direitos reservados para a Tux Games</p>
+        </div>
+    </footer>
+
+    <!-- Supabase SDK (precisa vir ANTES do contatos.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/contatos.js"></script>
+
+    <script>
+        const d = new Date();
+        document.getElementById("dataAtual").innerHTML =
+            "Hoje é " + d.toLocaleDateString("pt-BR", {
+                weekday: "long",
+                day: "2-digit",
+                month: "2-digit",
+                year: "numeric"
+            });
+    </script>
+</body>
+</html>
+
