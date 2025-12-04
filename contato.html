@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tux Games | Contato</title>
 
-    <link rel="icon" type="image/png" href="../assets/favicon.png">
-    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="css/contato.css">
 </head>
 
 <body>
     <header class="topo">
         <div class="cabecalho">
-            <a href="tuxgames.html" class="logo-link">
-                <img src="../assets/logo (1).png" title="Tux Games" class="logo" alt="Tux Games">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo (1).png" title="Tux Games" class="logo" alt="Tux Games">
             </a>
             <nav>
                 <ul>
-                    <li><a href="tuxgames.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="jogos.html">Jogos</a></li>
                     <li><a href="contato.html" class="ativo">Contato</a></li>
                 </ul>
@@ -57,7 +57,7 @@
                 <p class="subtitle">Preencha os campos abaixo e conte pra gente como podemos ajudar.</p>
 
                 <!-- mantém action e method, mas o JS vai impedir o redirect -->
-                <form id="formContato" action="tuxgames.html" method="post" class="contact-form">
+                <form id="formContato" action="index.html" method="post" class="contact-form">
                     <div class="form-row">
                         <div class="field">
                             <label for="nome">Nome completo</label>
@@ -155,7 +155,7 @@
 
     <!-- Supabase SDK (precisa vir ANTES do contatos.js) -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="../js/contatos.js"></script>
+    <script src="js/contatos.js"></script>
 
     <script>
         const d = new Date();
@@ -169,4 +169,3 @@
     </script>
 </body>
 </html>
-

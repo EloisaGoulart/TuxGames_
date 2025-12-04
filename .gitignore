@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
+# Local files
+*.log
+.env
+.env.local
+
+# Testing
+push-github.bat
+TEST_SUPABASE.js
+
+# Old structure
+pages/
