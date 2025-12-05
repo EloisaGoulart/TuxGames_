@@ -523,11 +523,16 @@ main {
 
     .banner-overlay h1 {
         font-size: clamp(1.5rem, 6vw, 2rem);
-        margin-bottom: 0.7rem;
+        margin-bottom: 1rem;
     }
 
     .banner-overlay p {
         font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .badge {
+        margin-bottom: 1rem;
     }
 
     .banner-actions {
@@ -549,8 +554,13 @@ main {
         gap: 1.5rem;
     }
 
+    .principal-texto p {
+        margin-bottom: 1.5rem;
+    }
+
     .titulo-principal {
         font-size: 1.8rem;
+        margin-bottom: 1.2rem;
     }
 
     .principal-texto p {
