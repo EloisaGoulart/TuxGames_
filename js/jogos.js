@@ -83,7 +83,7 @@ const jogos = [
 
 console.log("Total de jogos no catálogo:", jogos.length);
 
-// ELEMENTOS DA TELA
+// TELA
 
 
 const carouselsView = document.getElementById("carouselsView");
@@ -96,7 +96,7 @@ const genreFilter = document.getElementById("genreFilter");
 const categoryButtons = document.querySelectorAll(".btn-filter");
 const resetFiltersBtn = document.getElementById("resetFilters");
 
-let currentMode = "carousels"; // "carousels" | "list"
+let currentMode = "carousels"; // carousels
 
 
 // HELPERS
@@ -268,7 +268,7 @@ function renderCarousels() {
         });
 
 
-        // AUTO-SCROLL COM MOUSE
+        // AUTO-SCROLL 
 
         let animFrame = null;
         let mouseX = 0;
@@ -319,7 +319,7 @@ function renderCarousels() {
     });
 }
 
-// scroll dos carrosséis setas
+// scroll setas
 document.addEventListener("click", (e) => {
     const arrow = e.target.closest(".carousel-arrow");
     if (!arrow) return;
@@ -331,7 +331,7 @@ document.addEventListener("click", (e) => {
     scrollTrackStep(track, direction);
 });
 
-// MODO VISUAL: CARROSSEL x LISTA
+// VISUAL
 
 
 function showCarousels() {
@@ -346,7 +346,7 @@ function showList() {
     if (listView) listView.classList.remove("hidden");
 }
 
-// Verifica se filtros 
+// Verifica filtros 
 function filtrosEmEstadoInicial() {
     const termo = (searchInput?.value || "").trim();
     const ano = yearFilter ? yearFilter.value : "all";
