@@ -72,12 +72,14 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 15px;
     letter-spacing: 0.1em;
     color: #111827;
     font-weight: 700;
@@ -674,7 +676,7 @@ a.btn-outline {
     }
 
     nav a {
-        font-size: 0.9rem !important;
+        font-size: 14px !important;
     }
 
     .filters-top-row {
@@ -732,7 +734,7 @@ a.btn-outline {
     }
 
     nav a {
-        font-size: 0.85rem !important;
+        font-size: 13px !important;
         letter-spacing: 0.08em !important;
     }
 
@@ -806,7 +808,7 @@ a.btn-outline {
     }
 
     nav a {
-        font-size: 0.75rem !important;
+        font-size: 12px !important;
         letter-spacing: 0.05em !important;
     }
 
