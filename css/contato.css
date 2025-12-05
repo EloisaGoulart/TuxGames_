@@ -48,6 +48,10 @@ body {
     padding: 0;
 }
 
+.topo nav li {
+    flex-shrink: 0;
+}
+
 .topo nav a {
     text-decoration: none;
     text-transform: uppercase;
@@ -57,6 +61,8 @@ body {
     font-weight: 700;
     position: relative;
     padding-bottom: 0.25rem;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .topo nav a::after {
