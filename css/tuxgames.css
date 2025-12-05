@@ -150,6 +150,11 @@ body {
     box-shadow: 0 14px 28px rgba(22, 163, 74, 0.45);
 }
 
+.btn-primary:active {
+    transform: translateY(0px) scale(0.98);
+    box-shadow: 0 8px 20px rgba(22, 163, 74, 0.4);
+}
+
 .btn-outline {
     border: 1px solid rgba(249, 250, 251, 0.6);
     color: #f9fafb;
@@ -160,6 +165,11 @@ body {
 .btn-outline:hover {
     background: rgba(15, 23, 42, 0.25);
     transform: translateY(-1px);
+}
+
+.btn-outline:active {
+    transform: translateY(0px) scale(0.98);
+    background: rgba(15, 23, 42, 0.4);
 }
 
 .btn-sm {
