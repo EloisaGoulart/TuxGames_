@@ -68,7 +68,7 @@ body {
     align-items: center;
 }
 
-nav ul {
+.topo nav ul {
     list-style: none;
     display: flex;
     gap: 1.5rem;
@@ -76,7 +76,7 @@ nav ul {
     padding: 0;
 }
 
-nav a {
+.topo nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
@@ -87,7 +87,7 @@ nav a {
     padding-bottom: 0.25rem;
 }
 
-nav a::after {
+.topo nav a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -99,8 +99,8 @@ nav a::after {
     transition: width 0.18s ease;
 }
 
-nav a:hover::after,
-nav a.ativo::after {
+.topo nav a:hover::after,
+.topo nav a.ativo::after {
     width: 100%;
 }
 
@@ -675,7 +675,7 @@ a.btn-outline {
         justify-content: center;
     }
 
-    nav a {
+    .topo nav a {
         font-size: 14px !important;
     }
 
@@ -729,7 +729,7 @@ a.btn-outline {
         width: 140px;
     }
 
-    nav a {
+    .topo nav a {
         font-size: 13px !important;
         letter-spacing: 0.08em !important;
     }
@@ -799,7 +799,7 @@ a.btn-outline {
         width: 120px;
     }
 
-    nav a {
+    .topo nav a {
         font-size: 12px !important;
         letter-spacing: 0.05em !important;
     }
