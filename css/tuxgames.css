@@ -205,6 +205,9 @@ body {
     margin-bottom: 1.2rem;
     font-weight: 700;
     letter-spacing: 0.02em;
+    min-height: 90px;
+    line-height: 1.2;
+    contain: layout;
 }
 
 .banner-overlay p {
@@ -213,6 +216,7 @@ body {
     font-size: 1rem;
     color: #e5e7eb;
     line-height: 1.6;
+    min-height: 50px;
 }
 
 .badge {
@@ -225,6 +229,8 @@ body {
     letter-spacing: 0.15em;
     text-transform: uppercase;
     margin-bottom: 1.4rem;
+    min-height: 28px;
+    line-height: 1.5;
 }
 
 .banner-actions {
@@ -232,6 +238,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    min-height: 50px;
 }
 
 /* MAIN */

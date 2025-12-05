@@ -144,7 +144,9 @@ body {
     font-weight: 700;
     letter-spacing: 0.02em;
     margin-bottom: 0.7rem;
-    min-height: 60px;
+    min-height: 75px;
+    line-height: 1.2;
+    contain: layout;
 }
 
 .hero-eyebrow {
@@ -153,12 +155,15 @@ body {
     text-transform: uppercase;
     color: #fed7aa;
     margin-bottom: 0.55rem;
+    min-height: 20px;
+    line-height: 1.5;
 }
 
 .hero-subtitle {
     color: var(--text-muted);
     line-height: 1.6;
     font-size: 0.98rem;
+    min-height: 45px;
 }
 
 /* Filtros */
@@ -198,6 +203,8 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.14em;
     color: var(--text-muted);
+    min-height: 18px;
+    line-height: 1.5;
 }
 
 .search-input-shell {
@@ -257,12 +264,15 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.14em;
     color: var(--text-muted);
+    min-height: 18px;
+    line-height: 1.5;
 }
 
 .select-wrapper select {
     width: 100%;
     min-width: 0;
     padding: 0.55rem 0.8rem;
+    min-height: 40px;
     border-radius: 999px;
     border: 1px solid rgba(148, 163, 184, 0.7);
     background: #020617;
