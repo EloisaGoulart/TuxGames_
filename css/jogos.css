@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -586,7 +586,7 @@ a.btn-outline {
     width: 100%;
 }
 
-/* Carrosséis */
+/* Carrosseis */
 
 .carousels-view {
     display: flex;
@@ -715,7 +715,7 @@ a.btn-outline {
     display: none !important;
 }
 
-/* Responsivo */
+/* Responsividade */
 
 @media (max-width: 1024px) {
     .produtos {
