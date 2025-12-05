@@ -75,7 +75,7 @@ body {
 .topo nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     margin: 0;
     padding: 0;
 }
@@ -445,7 +445,7 @@ main {
     }
 
     nav ul {
-        gap: 1.4rem;
+        gap: 1.2rem;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -604,18 +604,3 @@ main {
         font-size: 1.6rem;
     }
 }
-
-
-
-
-/* FORÇA tamanho dO MENU  */
-
-header.topo nav a {
-    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-    font-size: 16px !important;
-    letter-spacing: 0.1em !important;
-    text-transform: uppercase !important;
-    font-weight: 700 !important;
-    color: #111827 !important;
-}
-

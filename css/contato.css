@@ -43,7 +43,7 @@ body {
 .topo nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     margin: 0;
     padding: 0;
 }
@@ -382,7 +382,7 @@ body {
     }
 
     nav ul {
-        gap: 1.4rem;
+        gap: 1.2rem;
         flex-wrap: wrap;
         justify-content: center;
     }
