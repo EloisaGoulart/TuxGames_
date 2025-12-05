@@ -430,6 +430,12 @@ main {
 
 /* RESPONSIVO */
 
+@media (max-width: 1024px) {
+    .servicos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 900px) {
     .cabecalho {
         flex-direction: column;
@@ -438,11 +444,14 @@ main {
 
     nav ul {
         gap: 1.4rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .principal {
         grid-template-columns: 1fr;
-        padding: 2.4rem 2rem;
+        padding: 2.4rem 1.5rem;
+        gap: 2rem;
     }
 
     .titulo-principal {
@@ -456,27 +465,135 @@ main {
     main {
         padding: 2.6rem 1.2rem 0;
     }
+
+    .banner {
+        height: auto;
+        min-height: 420px;
+        background-attachment: scroll;
+    }
+
+    .banner-overlay {
+        padding: 2rem 1.5rem;
+    }
+
+    .banner-overlay h1 {
+        font-size: clamp(1.8rem, 5vw, 2.4rem);
+    }
 }
 
 @media (max-width: 640px) {
+    .logo {
+        width: 160px;
+    }
+
+    .topo nav a {
+        font-size: 14px !important;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
     .banner {
-        height: 420px;
+        height: auto;
+        min-height: 380px;
+    }
+
+    .banner-overlay {
+        padding: 1.5rem 1rem;
+    }
+
+    .banner-overlay h1 {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+        margin-bottom: 0.7rem;
+    }
+
+    .banner-overlay p {
+        font-size: 0.9rem;
     }
 
     .banner-actions {
         flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .banner-actions .btn {
+        width: 100%;
+        max-width: 300px;
     }
 
     main {
-        padding-inline: 1rem;
+        padding: 2rem 1rem 0;
     }
 
     .principal {
-        padding: 2rem 1.5rem;
+        padding: 2rem 1.2rem;
+        gap: 1.5rem;
+    }
+
+    .titulo-principal {
+        font-size: 1.8rem;
+    }
+
+    .principal-texto p {
+        font-size: 1rem;
+    }
+
+    .controle {
+        max-width: 220px;
     }
 
     .servicos {
-        padding: 2.3rem 1.5rem 2.6rem;
+        padding: 2rem 1.2rem 2.5rem;
+    }
+
+    .servico-card {
+        padding: 1.5rem 1.3rem;
+    }
+
+    .mapa-conteudo iframe {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 140px;
+    }
+
+    .topo {
+        padding: 0.5rem 0;
+    }
+
+    .cabecalho {
+        padding: 0.8rem 1rem;
+    }
+
+    nav ul {
+        gap: 0.8rem;
+    }
+
+    .topo nav a {
+        font-size: 12px !important;
+        letter-spacing: 0.05em !important;
+    }
+
+    .banner-overlay h1 {
+        font-size: 1.4rem;
+    }
+
+    .badge {
+        font-size: 0.65rem;
+        padding: 0.2rem 0.7rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.3rem;
+        font-size: 0.75rem;
+    }
+
+    .titulo-principal {
+        font-size: 1.6rem;
     }
 }
 

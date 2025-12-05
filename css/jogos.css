@@ -646,14 +646,35 @@ a.btn-outline {
 
 /* Responsivo */
 
+@media (max-width: 1024px) {
+    .produtos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .game-card {
+        min-width: auto;
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 900px) {
     .cabecalho {
         flex-direction: column;
         gap: 0.7rem;
     }
 
+    .logo {
+        width: 160px;
+    }
+
     nav ul {
         gap: 1.4rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 0.9rem !important;
     }
 
     .filters-top-row {
@@ -661,7 +682,9 @@ a.btn-outline {
     }
 
     .select-row {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .games-main {
@@ -672,30 +695,159 @@ a.btn-outline {
         padding: 1.6rem 1.5rem;
     }
 
+    .games-hero h1 {
+        font-size: clamp(1.8rem, 4vw, 2.2rem);
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .carousel-shell {
         padding: 0.2rem 1.5rem;
+    }
+
+    .filters-bottom-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .category-buttons {
+        justify-content: flex-start;
     }
 }
 
 @media (max-width: 640px) {
+    .logo {
+        width: 140px;
+    }
+
+    .topo {
+        padding: 0.5rem 0;
+    }
+
+    .cabecalho {
+        padding: 0.8rem 1rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    nav a {
+        font-size: 0.85rem !important;
+        letter-spacing: 0.08em !important;
+    }
+
     .games-main {
-        padding: 1.8rem 1rem 2.6rem;
+        padding: 1.5rem 1rem 2.5rem;
+    }
+
+    .games-hero {
+        padding: 1.3rem 1.2rem;
+    }
+
+    .games-hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-eyebrow {
+        font-size: 0.7rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
     }
 
     .filters-card {
-        padding: 1.3rem 1.1rem;
+        padding: 1.2rem 1rem;
+    }
+
+    .select-row {
+        grid-template-columns: 1fr;
     }
 
     .produtos {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .game-card {
+        max-width: 100%;
     }
 
     .carousel-shell {
-        padding: 0.2rem 1.1rem;
+        padding: 0.2rem 0.5rem;
     }
 
     .carousel-arrow {
         display: none;
+    }
+
+    .carousel-section {
+        padding: 1.1rem 1rem;
+    }
+
+    .btn-filter {
+        font-size: 0.7rem;
+        padding: 0.35rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 130px;
+    }
+
+    nav ul {
+        gap: 0.8rem;
+    }
+
+    nav a {
+        font-size: 0.75rem !important;
+        letter-spacing: 0.05em !important;
+    }
+
+    .games-hero h1 {
+        font-size: 1.4rem;
+    }
+
+    .filters-card {
+        padding: 1rem 0.8rem;
+    }
+
+    .search-input-shell {
+        padding: 0.6rem 0.9rem;
+    }
+
+    #searchInput {
+        font-size: 0.85rem;
+    }
+
+    .select-wrapper select {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.7rem;
+    }
+
+    .game-card {
+        padding: 0.6rem;
+    }
+
+    .img_jogos {
+        height: 250px;
+    }
+
+    .game-info h2 {
+        font-size: 0.85rem;
+    }
+
+    .prod_desc {
+        font-size: 0.75rem;
+    }
+
+    .game-actions .btn {
+        font-size: 0.65rem;
+        padding: 0.5rem 0.7rem;
     }
 }
 
