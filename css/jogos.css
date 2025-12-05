@@ -729,10 +729,6 @@ a.btn-outline {
         width: 140px;
     }
 
-    nav ul {
-        gap: 1rem;
-    }
-
     nav a {
         font-size: 13px !important;
         letter-spacing: 0.08em !important;
@@ -801,10 +797,6 @@ a.btn-outline {
 
     .logo {
         width: 120px;
-    }
-
-    nav ul {
-        gap: 0.8rem;
     }
 
     nav a {
