@@ -325,13 +325,31 @@ a.btn-outline {
     text-decoration: none;
 }
 
+/* Botão de resetar filtros */
+
+#resetFilters {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    color: #ffffff;
+    border: 1px solid rgba(249, 115, 22, 0.8);
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+#resetFilters:hover {
+    background: linear-gradient(135deg, #ea580c, #dc2626);
+    box-shadow: 0 6px 18px rgba(249, 115, 22, 0.5);
+    transform: translateY(-1px);
+    border-color: rgba(249, 115, 22, 1);
+}
+
 /* Botões de categoria */
 
 .filters-bottom-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 1rem;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -339,6 +357,7 @@ a.btn-outline {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    flex: 1;
 }
 
 .btn-filter {
