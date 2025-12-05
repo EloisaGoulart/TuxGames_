@@ -44,8 +44,7 @@ body {
 .topo {
     background: linear-gradient(90deg, #ff914d, #ff914d);
     box-shadow: 0 8px 24px rgba(15, 23, 42, 0.5);
-    position: sticky;
-    top: 0;
+    position: relative;
     z-index: 20;
 }
 
@@ -56,6 +55,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-height: 80px;
 }
 
 .logo {
@@ -718,16 +718,13 @@ a.btn-outline {
 }
 
 @media (max-width: 640px) {
+    .cabecalho {
+        padding: 0.6rem 1rem;
+        min-height: 60px;
+    }
+
     .logo {
         width: 140px;
-    }
-
-    .topo {
-        padding: 0.5rem 0;
-    }
-
-    .cabecalho {
-        padding: 0.8rem 1rem;
     }
 
     nav ul {
@@ -795,8 +792,13 @@ a.btn-outline {
 }
 
 @media (max-width: 480px) {
+    .cabecalho {
+        padding: 0.5rem 0.8rem;
+        min-height: 50px;
+    }
+
     .logo {
-        width: 130px;
+        width: 120px;
     }
 
     nav ul {
