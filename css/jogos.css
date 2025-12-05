@@ -173,6 +173,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.1rem;
+    min-height: 200px;
 }
 
 .filters-top-row {
@@ -240,8 +241,22 @@ body {
     gap: 1rem;
 }
 
+.select-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.select-wrapper label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--text-muted);
+}
+
 .select-wrapper select {
     width: 100%;
+    min-width: 0;
     padding: 0.55rem 0.8rem;
     border-radius: 999px;
     border: 1px solid rgba(148, 163, 184, 0.7);
@@ -352,6 +367,7 @@ a.btn-outline {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+    min-height: 80px;
 }
 
 .category-buttons {
